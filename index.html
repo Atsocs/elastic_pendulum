@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="en"><head>
+  <script src="p5.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+  <button>começar gravação</button> <input type="checkbox" id="erase_vids" name="erase_vids" value="erase_vids" checked="true">
+  <label for="vehicle1">apagar vídeos ao apertar em "vai!"</label><br><br>
+  [V] para mudar visualização, [S] para capturar a tela, [Z/X] para ajustar o zoom;<br>Tente arrastar a bolinha com o mouse!<br><br>
+  <label for="pars">Mudar parâmetro</label>
+  <select name="pars" id="pars">
+    <option value="nenhum"></option>
+    <option value="m">m</option>
+    <option value="L">L</option>
+    <option value="g">g</option>
+    <option value="k">k</option>
+    <option value="b1">b1</option>
+    <option value="b2">b2</option>
+    <option value="r0">r(0)</option>
+    <option value="r_dot0">r_dot(0)</option>
+    <option value="teta0">teta(0)</option>
+    <option value="teta_dot0">teta_dot(0)</option>
+    <option value="sc">zoom</option>
+    <option value="D">bola</option>
+    <option value="h">passo RK4</option>
+    <option value="timeSpeeder">rapidez</option>
+
+  </select>
+  <label for="valor">para</label>
+  <input name="valor" type="text" size="4">
+  <button onclick="setup()">vai!</button>
+  <br>
+  <script src="sketch.js"></script>
+
+
+</body></html>
